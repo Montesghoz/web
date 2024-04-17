@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://css.gg/css?=|instagram" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="curriculum_new_css.css">
+    <title>Montesghoz</title>
+</head>
+<body>
+    <header>
+        
+        <div id="container-header">
+            <div id="container-header-inicio">
+                <h3 class="formato-texto-titulos" id="header-inicio">Sobre mí</h3>
+            </div>
+            <div id="container-header-proyectos">
+                <h3 class="formato-texto-titulos" id="header-proyectos">Mis proyectos</h3>
+            </div> 
+            <div id="container-header-estudios">
+                <h3 class="formato-texto-titulos" id="header-estudios">Estudios</h3>
+            </div>
+            <div id="container-header-habilidades">
+                <h3 class="formato-texto-titulos" id="header-habilidades">Habilidades</h3>
+            </div>
+            <div id="container-header-boton-cv">
+                <div id="header-boton-cv"> <h3 class="formato-texto-titulos" id="header-descarga-cv"> Descarga mi CV </h3></div>
+                <script>
+                    document.getElementById('header-descarga-cv').addEventListener('click', function(event) {
+                        // Verifica si el clic proviene del h3
+                        if (event.target.id === 'header-descarga-cv') {
+                            var link = document.createElement('a');
+                            link.href = 'https://drive.google.com/uc?export=download&id=1p-SLwiJ4yNmWqD6euEj7XJ1waEn0ilGn';
+                            link.download = 'CV_Juan_Isabel_Gutierrez.pdf'; // Puedes establecer el nombre del archivo aquí
+                            link.click();
+                        }
+                    });                    
+                </script>
+            </div>
+        </div>
+    </header>
+    <main>
+        <article class="article-sobre-mi">
+            <div class="container-article-sobre-mi">
+                <div class="container-sobre-mi">
+                    <h3 class="formato-texto-titulos" id="sobre-mi-article">Sobre mí</h3>
+                </div>  
+            </div>
+            <div class="container-texto-sobre-mi">
+                <p class="formato-texto" id="texto-sobre-mi">Soy un joven autodidacta
+                    que se motiva diario a aprender algo nuevo y mejorar día a
+                    día, aprender de sus errores y enfocarse en sus metas que
+                    se propone para lograr alcanzarlas
+                </p>
+            </div>
+        </article>
+        <div id="container-nombre">
+            <div  id="div-nombre">
+                <h3 class="formato-texto-titulos" id="soy"> Yo soy </h3>
+                <h2 class="formato-texto-titulos" id="nombre">Juan Isabel Gutiérrez González</h2>
+            </div>
+        </div>
+        <div class="container-foto-perfil">
+            <div class="div-foto-perfil">
+                <img  id="foto-perfil" src="http://imgfz.com/i/jsrCc8i.jpeg" alt="Juan foto de Sobre mí."> 
+            </div>
+        </div> 
+        
+    </main>
+    
+</body>
+</html>
